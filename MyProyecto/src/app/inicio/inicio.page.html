@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card>
+      <ion-card-header>
+            <ion-card-title align="center">Iniciar sesion</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+          <ion-list>
+          <ion-item>
+              <ion-input type="text" placeholder="Nombre" #txtNombre></ion-input>
+          </ion-item>
+              <br/>
+          <ion-item>
+              <ion-input type="password" placeholder="*******" #txtConstrasenia></ion-input>
+          </ion-item>
+          </ion-list>
+
+          <ion-row>
+              <ion-col>
+                  <ion-button color="success" type="submit" [routerLink] ="['/home']" >
+                      Ingresar
+                  </ion-button>
+              </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col>
+                  <ion-label>
+                      <a [routerLink] ="['/registro']"><h3 class="link_page">Crear una cuenta</h3></a>
+                  </ion-label>
+              </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col>
+                  <ion-label>
+                      <a [routerLink] ="['/restablecer']"><h3 class="link_page">¿Olvido la contraseña?</h3></a>
+                  </ion-label>
+              </ion-col>
+          </ion-row>
+      </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="dark">
+    <ion-title color="light">
+      <h3 class="footer">Te llevo</h3>
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>
+

@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title align="center">
+      Te llevo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <img src="" alt="">
+
+  <h1 align="center">Te llevo</h1>
+
+  <ion-card>
+    <ion-card-header>
+      <img src='https://assets.turbologo.com/blog/es/2019/12/19132829/Uber-car.png'>
+    <ion-card-subtitle>Aplicación para trayecto</ion-card-subtitle>
+       <ion-card-title>Te dejamos en la puerta de tu casa!</ion-card-title>
+    </ion-card-header>
+    <ion-card-content> Te llevo es una aplicación diseñada para el traslado,
+      estés donde estés, entrando a la app te llevaremos a donde quieras.
+    </ion-card-content>
+    </ion-card>
+
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button>
+        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+      </ion-fab-button>
+
+      <ion-fab-list side="top">
+        <ion-fab-button color="light" [routerLink] = "['/inicio']">
+          <ion-icon name="person-circle-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+
+      <ion-fab-list side="start">
+        <ion-fab-button color="light" [routerLink] = "['/ubicacion']">
+          <ion-icon name="locate-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+
+    </ion-fab>
+</ion-content>
